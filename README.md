@@ -33,7 +33,7 @@ A list of the apps and short description of each follows:
 
 # Walkthrough / Guide for Using These Apps
 
-These apps exist as a git submodule inside of the Petalinux projects provided by Digilent. Currently, there are Petalinux projects for the [Arty-Z7-20](https://github.com/Digilent/Petalinux-Arty-Z7-20), [The Arty-Z7-10](https://github.com/Digilent/Petalinux-Arty-Z7-10), the [Arty-S7-50](https://github.com/Digilent/Petalinux-Arty-S7-50), and the [Zybo-Z7-20](https://github.com/Digilent/Petalinux-Zybo-Z7-20).
+These apps exist as a git submodule inside of the Petalinux projects provided by Digilent. Currently, there are Petalinux projects for the [Arty-Z7-20](https://github.com/Digilent/Petalinux-Arty-Z7-20), the [Arty-Z7-10](https://github.com/Digilent/Petalinux-Arty-Z7-10), the [Arty-S7-50](https://github.com/Digilent/Petalinux-Arty-S7-50), and the [Zybo-Z7-20](https://github.com/Digilent/Petalinux-Zybo-Z7-20).
 
 ##### What is a Git sub-module?
 A git submodule allows for the nesting of one repository inside of another repository. This allows for independent version control for many repositories which pull in another common repository amongst them. In this case, the Petalinux projects provided by Digilent all pull in this submodule. Thus, it makes sense to version control this submodule independently from the Petalinux projects themselves. This also allows for the changing or adding of the apps provided without having to add each app in to each Petalinux project.
@@ -60,7 +60,7 @@ When you first clone the project, you can navigate to `{project directory}/proje
 git submodule update --init --recursive
 ```
 
-If, instead, you already have popualted this directory and are looking to pull in any new changes to the digilent-apps repository, you can use the command `bash git submodule update --recursive`. Alternatively, when you first clone the project, adding the argument ` --recursive` will pull in the submodule at the same time as the Petalinux project.
+If, instead, you already have popualted this directory and are looking to pull in any new changes to the digilent-apps repository, you can use the command `git submodule update --recursive`. Alternatively, when you first clone the project, adding the argument ` --recursive` will pull in the submodule at the same time as the Petalinux project.
 
 #### 4. Configure the rootFs
 Now you can configure the root file system that you would like to include in your linux image.
