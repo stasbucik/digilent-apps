@@ -6,11 +6,11 @@ A list of the apps and short description of each follows:
 
 + **libuio**
   A user space library for interfacing with uio devices
-  uio devices can be found in /sys/class/uio
+  uio devices can be found in /sys/class/uio.
   Can be used with #include <libuio.h> and -luio as a compiler flag
   
 + **libvrc**
-  A user space library for controlling video resolution output
+  A user space library for controlling video resolution output.
   Can be used with #include <libvrc.h> and -lvrc as a compiler flag
   
 + **libgpio**
@@ -60,7 +60,7 @@ When you first clone the project, you can navigate to `{project directory}/proje
 git submodule update --init --recursive
 ```
 
-If, instead, you already have popualted this directory and are looking to pull in any new changes to the digilent-apps repository, you can use the command `bash git submodule update --recursive`. Alternatively, when you first clone the project, adding the argument ` --recursive` will pull in the submodule as the same time as the Petalinux project.
+If, instead, you already have popualted this directory and are looking to pull in any new changes to the digilent-apps repository, you can use the command `bash git submodule update --recursive`. Alternatively, when you first clone the project, adding the argument ` --recursive` will pull in the submodule at the same time as the Petalinux project.
 
 #### 4. Configure the rootFs
 Now you can configure the root file system that you would like to include in your linux image.
