@@ -13,7 +13,7 @@ RDEPENDS_${PN} = "libgpio libuio glibc"
 SRC_URI = "git://github.com/mitchellorsucci/gpioutil.git \
 		  "
 
-SRCREV = "1c3d9b62c793b226b409bc6d2d35d321dd11d51a"
+SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
 TARGET_CC_ARCH += "${LDFLAGS}"
 

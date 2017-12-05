@@ -14,7 +14,7 @@ RDEPENDS_${PN} = "libpwm libuio glibc"
 
 SRC_URI = "git://github.com/mitchellorsucci/pwmdemo.git \
 		  "
-SRCREV = "84b5baa9c5ebd7dfc01b55eb65dfd54a18ddfb5f"
+SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
 
 TARGET_CC_ARCH += "${LDFLAGS}"

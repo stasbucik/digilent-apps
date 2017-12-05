@@ -10,7 +10,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 SRC_URI = "git://github.com/mitchellorsucci/libuio.git \
 		  "
 
-SRCREV = "7e928628096740ac540e0a92aeccc40f522e5de1"
+SRCREV = "${AUTOREV}"
 
 RDEPENDS_${PN} = "glibc"
 DEPENDS = "glibc"

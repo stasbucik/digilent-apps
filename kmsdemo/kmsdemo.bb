@@ -14,7 +14,7 @@ RDEPENDS_${PN} = "libvrc glibc"
 SRC_URI = "git://github.com/mitchellorsucci/kmsdemo.git \
 		  "
 
-SRCREV = "d208ba6e1c72592492bd549f884a0a8a42eea9a6"
+SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
 TARGET_CC_ARCH += "${LDFLAGS}"
 

@@ -10,7 +10,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 SRC_URI = "git://github.com/mitchellorsucci/libvrc.git \
 		  "
 
-SRCREV = "19f3c57d4f7716f33a508bc1ee76eb8ca6269329"
+SRCREV = "${AUTOREV}"
 
 RDEPENDS_${PN} = "glibc"
 DEPENDS = "glibc"

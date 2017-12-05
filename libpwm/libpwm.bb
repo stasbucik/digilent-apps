@@ -10,7 +10,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 SRC_URI = "git://github.com/mitchellorsucci/libpwm.git \
 		  "
 
-SRCREV = "d6ff7548965a2b83702045399faa9a937216fcb6"
+SRCREV = "${AUTOREV}"
 
 RDEPENDS_${PN} = "glibc libuio"
 DEPENDS = "glibc libuio"

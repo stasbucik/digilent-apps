@@ -12,7 +12,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 SRC_URI = "git://github.com/mitchellorsucci/libgpio.git \
 	"
-SRCREV = "34a5792a20816b7f17807d4bc5bf06bcf1f585fe"
+SRCREV = "${AUTOREV}"
 
 
 FILES_${PN} = "${libdir}/*.so.* ${includedir}/* ${libdir}/libgpio.so"
