@@ -10,7 +10,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 DEPENDS = "libgpio libuio glibc"
 RDEPENDS_${PN} = "libgpio libuio glibc"
-SRC_URI = "git://github.com/digilent/gpioutil.git \
+SRC_URI = "git://github.com/digilent/gpioutil.git;protocol=https \
 		  "
 
 SRCREV = "${AUTOREV}"
