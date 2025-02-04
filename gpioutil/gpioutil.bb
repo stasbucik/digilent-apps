@@ -7,9 +7,9 @@ SECTION = "PETALINUX/apps"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 DEPENDS = "libgpio libuio glibc"
-RDEPENDS_${PN} = "libgpio libuio glibc"
+RDEPENDS:${PN} = "libgpio libuio glibc"
 SRC_URI = "git://github.com/digilent/gpioutil.git;protocol=https \
 		  "
 
@@ -26,4 +26,4 @@ do_install() {
 	     install -m 0755 gpioutil ${D}${bindir}
 }
 
-FILES_${PN} += "gpioutil"
+FILES:${PN} += "gpioutil"

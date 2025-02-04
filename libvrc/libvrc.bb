@@ -12,14 +12,14 @@ SRC_URI = "git://github.com/digilent/libvrc.git;protocol=https \
 
 SRCREV = "${AUTOREV}"
 
-RDEPENDS_${PN} = "glibc"
+RDEPENDS:${PN} = "glibc"
 DEPENDS = "glibc"
 
-FILES_${PN} = "${libdir}/*.so.* ${includedir}/* ${libdir}/*.so"
+FILES:${PN} = "${libdir}/*.so.* ${includedir}/* ${libdir}/*.so"
 
 FILES_SOLIBSDEV = ""
-FILES_${PN}-dev = ""
-INSANE_SKIP_${PN} += "dev-so"
+FILES:${PN}-dev = ""
+INSANE_SKIP:${PN} += "dev-so"
 SOLIBS = ".so"
 
 

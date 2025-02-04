@@ -7,10 +7,10 @@ SECTION = "PETALINUX/apps"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 DEPENDS = "libpwm libuio glibc"
-RDEPENDS_${PN} = "libpwm libuio glibc"
+RDEPENDS:${PN} = "libpwm libuio glibc"
 
 SRC_URI = "git://github.com/digilent/pwmdemo.git;protocol=https \
 		  "
@@ -28,4 +28,4 @@ do_install() {
 	     install -m 0755 pwmdemo ${D}${bindir}
 }
 
-FILES_${PN} += "${bindir}/pwmdemo"
+FILES:${PN} += "${bindir}/pwmdemo"

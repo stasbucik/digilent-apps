@@ -7,7 +7,7 @@ SECTION = "libs"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 
 SRC_URI = "git://github.com/digilent/libgpio.git;protocol=https \
@@ -15,16 +15,16 @@ SRC_URI = "git://github.com/digilent/libgpio.git;protocol=https \
 SRCREV = "${AUTOREV}"
 
 
-FILES_${PN} = "${libdir}/*.so.* ${includedir}/* ${libdir}/libgpio.so"
+FILES:${PN} = "${libdir}/*.so.* ${includedir}/* ${libdir}/libgpio.so"
 
 FILES_SOLIBSDEV = ""
-FILES_${PN}-dev = ""
-INSANE_SKIP_${PN} += "dev-so"
+FILES:${PN}-dev = ""
+INSANE_SKIP:${PN} += "dev-so"
 SOLIBS = ".so"
 
 
 
-RDEPENDS_${PN} = "glibc libuio"
+RDEPENDS:${PN} = "glibc libuio"
 DEPENDS = "glibc libuio"
 
 
