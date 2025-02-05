@@ -12,7 +12,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 DEPENDS = "libpwm libuio glibc"
 RDEPENDS:${PN} = "libpwm libuio glibc"
 
-SRC_URI = "git://github.com/digilent/pwmdemo.git;protocol=https \
+SRC_URI = "git://github.com/digilent/pwmdemo.git;protocol=https;branch=master \
 		  "
 SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"

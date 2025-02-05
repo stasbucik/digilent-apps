@@ -11,7 +11,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 DEPENDS = "libvrc glibc"
 RDEPENDS:${PN} = "libvrc glibc"
 
-SRC_URI = "git://github.com/digilent/kmsdemo.git;protocol=https \
+SRC_URI = "git://github.com/digilent/kmsdemo.git;protocol=https;branch=master \
 		  "
 
 SRCREV = "${AUTOREV}"
